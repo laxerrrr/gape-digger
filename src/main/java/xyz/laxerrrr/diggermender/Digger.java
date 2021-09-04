@@ -18,7 +18,6 @@ import java.util.List;
 public class Digger {
     public static boolean digging = false;
     public static void startDig() throws InterruptedException {
-
         digging = true;
     }
     public static void stopDig(){
