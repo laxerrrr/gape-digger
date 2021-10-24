@@ -26,7 +26,6 @@ public class DiggerMender
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        logger = event.getModLog();
 	ClientCommandHandler.instance.registerCommand(new CommandStartDig());
 	ClientCommandHandler.instance.registerCommand(new CommandStopDig());
     ClientCommandHandler.instance.registerCommand(new CommandCancelDig());
