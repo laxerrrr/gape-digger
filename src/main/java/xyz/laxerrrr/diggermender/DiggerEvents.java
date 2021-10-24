@@ -62,7 +62,7 @@ public class DiggerEvents {
 
 
     @SubscribeEvent //TODO: Fix whitespace
-    public void tickEvent(TickEvent.ServerTickEvent event) throws FileNotFoundException { //Fires every start and end of Client Tick
+    public void tickEvent(TickEvent.ClientTickEvent event) throws FileNotFoundException { //Fires every start and end of Client Tick
         if (event.phase == TickEvent.Phase.END) { //Fires at end of tick
             TICKS++; //Counts ticks
             if (TICKS % 40 == 0) { //If ticks are divisible by 40, then go on
