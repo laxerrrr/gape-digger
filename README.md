@@ -1,9 +1,10 @@
-gape digging bot using the baritone api
+Gape digging bot using the baritone api
 
-very scuffed but works well.
+Needs lots of refactoring but works well.
 
-make a folder in your .minecraft called Digger and place a file called databaseIP in it with the ip of your mongo database, username and password. in that folder, also make a file called partitions with the range of partitions that the player/bot will use. example: 1 20
 
-make sure there is only one document in the partitions collection
+For users:
 
-msg laxerrrr#6150 for more info
+Make a folder in your .minecraft called Digger and place a file called databaseIP in it with the ip of your mongo database, username and password. In that folder, also make a file called partitions with the range of partitions that the player/bot will use. Example: 1 20
+
+Make sure there is only one document in the partitions collection
