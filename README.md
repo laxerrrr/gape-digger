@@ -1,4 +1,4 @@
-Gape digging bot using the baritone api
+<h2>Gape digging bot using the Baritone API</h2>
 
 Needs lots of refactoring but works well.
 
