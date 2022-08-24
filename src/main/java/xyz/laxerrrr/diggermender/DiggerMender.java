@@ -29,7 +29,6 @@ public class DiggerMender
 	ClientCommandHandler.instance.registerCommand(new CommandStartDig());
 	ClientCommandHandler.instance.registerCommand(new CommandStopDig());
     ClientCommandHandler.instance.registerCommand(new CommandCancelDig());
-    ClientCommandHandler.instance.registerCommand(new CommandConnect());
     }
 
     @EventHandler

@@ -15,7 +15,7 @@ import org.bson.Document;
 import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.List;
-public class Digger {
+public class Digger { //TODO: WAY LESS API CALLS, need to get the primary Baritone instance on login
     public static boolean digging = false;
     public static void startDig() throws InterruptedException {
         digging = true;
@@ -40,9 +40,5 @@ public class Digger {
     
     public static void cleanPart(BetterBlockPos coord){
         BaritoneAPI.getProvider().getPrimaryBaritone().getBuilderProcess().clearArea(coord, coord.north(63).west(63).down(42));
-    }
-
-    public static void connect(){
-        Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(new TextComponentString("** LITTLE EASTER EGG YOU FUCKER WOOHOO **"));
     }
 }

@@ -25,25 +25,28 @@ import java.util.UUID;
 import static com.mongodb.client.model.Filters.eq;
 
 public class DiggerEvents {
-    public static BetterBlockPos coord;
-    public static int rowAmount = 0;
+
+    BetterBlockPos coord;
+    int rowAmount = 0;
     public static int stage = 0;
-    public static int currentLayer;
+    int currentLayer;
+
     public static boolean connected = false;
     public static MongoClient mongoClient;
-    public static MongoCollection<Document> collection;
-    public static MongoCollection<Document> partitionsCollection;
-    public static MongoDatabase database;
-    public static MongoDatabase partitionsDatabase;
-    public static Document doc;
-    public static Document partitions;
-    public static Scanner s;
-    public static ArrayList<Integer> allocatedRange;
-    public static int currentPartition;
-    public static boolean areacleared = false;
-    public static long TICKS = 0;
-    public static boolean inGame = false;
-    int playerID;
+    MongoCollection<Document> collection;
+    MongoCollection<Document> partitionsCollection;
+    MongoDatabase database;
+    MongoDatabase partitionsDatabase;
+    Document doc;
+    Document partitions;
+
+    Scanner s;
+    ArrayList<Integer> allocatedRange;
+    int currentPartition;
+
+    boolean areacleared = false;
+    long TICKS = 0;
+    boolean inGame = false;
     UUID playerUUID;
     File file = new File(Minecraft.getMinecraft().gameDir.toString() + "/digger-mender");
 
@@ -133,20 +136,8 @@ public class DiggerEvents {
                                 rowAmount++;
                                 stage = 4;
                                 break;
-                            case 4: // (Just room for more logic) TODO: remove extra cases
-                                stage = 5;
-                                break;
-                            case 5:
-                                stage = 6;
-                                break;
-                            case 6:
-                                stage = 7;
-                                break;
-                            case 7:
-                                stage = 8;
-                                break;
-                            case 8:
-                                if (DiggerEvents.rowAmount == 64) {
+                            case 4:
+                                if (rowAmount == 64) {
                                     Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(new TextComponentString("§bDone layer"));
                                     rowAmount = 0;
                                     currentLayer -= 2;
