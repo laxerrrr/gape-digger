@@ -7,4 +7,10 @@ For users:
 
 Make a folder in your .minecraft called Digger and place a file called databaseIP in it with the ip of your mongo database, username and password. In that folder, also make a file called partitions with the range of partitions that the player/bot will use. Example: 1 20
 
-Make sure there is only one document in the partitions collection containing the # of partitions and the X and Y coords  of their southeast corner every line. Every partition is 4 chunks x 4 chunks (64x64 blocks). 
+Make sure there is only one document in the partitions collection containing the # of partitions and the X and Y coords  of their southeast corner every line. Every partition is 4 chunks x 4 chunks (64x64 blocks).
+
+ -- MongoDB inital layout --
+
+DATABASE             COLLECTIONS
+digging-operation -> partitions 
+digging-operation -> bots-progress
