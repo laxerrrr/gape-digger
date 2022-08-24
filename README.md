@@ -11,6 +11,4 @@ Make sure there is only one document in the partitions collection containing the
 
  -- MongoDB inital layout --
 
-DATABASE             COLLECTIONS
-digging-operation -> partitions 
-digging-operation -> bots-progress
+![Screen Shot 2022-08-24 at 3 46 39 AM](https://user-images.githubusercontent.com/20301420/186349616-e65ec626-7827-4574-982c-10425ac54f4d.png)
