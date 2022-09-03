@@ -1,3 +1,5 @@
+//HUGE MESS, needs to be refactored...
+
 package xyz.laxerrrr.diggermender;
 
 import baritone.api.BaritoneAPI;
