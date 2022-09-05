@@ -14,7 +14,6 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class CommandStartDig implements ICommand {
-    //Digger digger = new Digger();
     @Override
     public String getName() {
         return "startdig";
